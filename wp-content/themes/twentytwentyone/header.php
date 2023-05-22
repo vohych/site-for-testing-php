@@ -32,13 +32,13 @@
       e.async = true;
       d.children[0].insertBefore(e, d.children[0].children[0]);
       w.onload = function () {
-        w.sendConversationUrls = ['/thank-you/'];
-        //w.sendConversationUrls = [need set url as on your page but don`t need set host info (https://my-site.com),
-				// example: 1) /thank-you; 2) /thank-you/; 3) /thank-you/sent; 4) /thank-you/sent/; ]
+        w.sendConversationUrls = ['thank-you'];
+        //(hint) – [w.sendConversationUrls = need set url as on your page but don`t need set host info (https://my-site.com),
+				// example: 1) /thank-you; 2) /thank-you/; 3) /thank-you/sent; 4) /thank-you/sent/; 5) thank-you/sent; 6) thank-you/sent/]
         w.sendConversationFromIds = ['conversation'];
         w.sendConversationFromClasses = ['class_name'];
         w.navigationWithLoad = true;
-        // example, if framework (React) [w.navigationWithLoad = false;]
+        // (hint) – example, if framework (React) [w.navigationWithLoad = false;]
         // if php page [w.navigationWithLoad = true;]
       }
 
