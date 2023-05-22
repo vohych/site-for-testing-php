@@ -688,8 +688,8 @@ function ga_rewrite()
     document.addEventListener('wpcf7mailsent', function (event) {
       console.log(event, 'event function php');
       const id = event.detail.contactFormId;
-      if (id === 5) {
-
+      if (id === 14) {
+				window.location.href = `${window.protocol}${window.location.host}/thank-you`
       }
     }, false);
 
